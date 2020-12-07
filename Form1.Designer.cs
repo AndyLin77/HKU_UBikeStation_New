@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cbArea = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -37,36 +37,34 @@
             this.btnRefresh = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnRemoveFav = new System.Windows.Forms.Button();
-            this.btnAddFav = new System.Windows.Forms.Button();
-            this.tbBkCnt = new System.Windows.Forms.TextBox();
-            this.tbEmpCnt = new System.Windows.Forms.TextBox();
-            this.tbAvCnt = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tbAddress = new System.Windows.Forms.TextBox();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvAllList = new System.Windows.Forms.DataGridView();
             this.dgvFavorite = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dgvAllList = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnRemoveFav = new System.Windows.Forms.Button();
+            this.btnAddFav = new System.Windows.Forms.Button();
+            this.tbEmpCnt = new System.Windows.Forms.TextBox();
+            this.tbAvCnt = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbAddress = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAllList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFavorite)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAllList)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // cbArea
@@ -145,193 +143,6 @@
             this.tabPage1.Text = "Favorite";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.dgvAllList);
-            this.tabPage2.Location = new System.Drawing.Point(8, 51);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1002, 581);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "All List";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 37);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Address";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btnRemoveFav);
-            this.groupBox2.Controls.Add(this.btnAddFav);
-            this.groupBox2.Controls.Add(this.tbBkCnt);
-            this.groupBox2.Controls.Add(this.tbEmpCnt);
-            this.groupBox2.Controls.Add(this.tbAvCnt);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.tbAddress);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(1036, 224);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(526, 575);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Detail";
-            // 
-            // btnRemoveFav
-            // 
-            this.btnRemoveFav.Location = new System.Drawing.Point(23, 484);
-            this.btnRemoveFav.Name = "btnRemoveFav";
-            this.btnRemoveFav.Size = new System.Drawing.Size(486, 63);
-            this.btnRemoveFav.TabIndex = 16;
-            this.btnRemoveFav.Text = "Remove Fav.";
-            this.btnRemoveFav.UseVisualStyleBackColor = true;
-            this.btnRemoveFav.Click += new System.EventHandler(this.btnRemoveFav_Click);
-            // 
-            // btnAddFav
-            // 
-            this.btnAddFav.Location = new System.Drawing.Point(23, 384);
-            this.btnAddFav.Name = "btnAddFav";
-            this.btnAddFav.Size = new System.Drawing.Size(486, 63);
-            this.btnAddFav.TabIndex = 15;
-            this.btnAddFav.Text = "Add Fav.";
-            this.btnAddFav.UseVisualStyleBackColor = true;
-            this.btnAddFav.Click += new System.EventHandler(this.btnAddFav_Click);
-            // 
-            // tbBkCnt
-            // 
-            this.tbBkCnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbBkCnt.Location = new System.Drawing.Point(370, 283);
-            this.tbBkCnt.Name = "tbBkCnt";
-            this.tbBkCnt.Size = new System.Drawing.Size(139, 49);
-            this.tbBkCnt.TabIndex = 14;
-            // 
-            // tbEmpCnt
-            // 
-            this.tbEmpCnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbEmpCnt.Location = new System.Drawing.Point(198, 283);
-            this.tbEmpCnt.Name = "tbEmpCnt";
-            this.tbEmpCnt.Size = new System.Drawing.Size(139, 49);
-            this.tbEmpCnt.TabIndex = 13;
-            // 
-            // tbAvCnt
-            // 
-            this.tbAvCnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbAvCnt.Location = new System.Drawing.Point(26, 283);
-            this.tbAvCnt.Name = "tbAvCnt";
-            this.tbAvCnt.Size = new System.Drawing.Size(139, 49);
-            this.tbAvCnt.TabIndex = 12;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(375, 218);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(128, 37);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "BikeCnt";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(201, 218);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 37);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "EmpCnt";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 218);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 37);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Available";
-            // 
-            // tbAddress
-            // 
-            this.tbAddress.Location = new System.Drawing.Point(23, 123);
-            this.tbAddress.Name = "tbAddress";
-            this.tbAddress.Size = new System.Drawing.Size(486, 44);
-            this.tbAddress.TabIndex = 8;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "UpdateTime";
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.Format = "yyyy/MM/dd  HH:mm:ss";
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle9;
-            this.dataGridViewTextBoxColumn4.FillWeight = 120F;
-            this.dataGridViewTextBoxColumn4.HeaderText = "UpdateTime";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Position";
-            this.dataGridViewTextBoxColumn3.FillWeight = 190F;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "CArea";
-            this.dataGridViewTextBoxColumn2.FillWeight = 85F;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Area";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID";
-            this.dataGridViewTextBoxColumn1.FillWeight = 75F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "No";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dgvAllList
-            // 
-            this.dgvAllList.AllowUserToAddRows = false;
-            this.dgvAllList.AllowUserToDeleteRows = false;
-            this.dgvAllList.AllowUserToResizeColumns = false;
-            this.dgvAllList.AllowUserToResizeRows = false;
-            this.dgvAllList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvAllList.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dgvAllList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAllList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
-            this.dgvAllList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvAllList.Location = new System.Drawing.Point(3, 3);
-            this.dgvAllList.Name = "dgvAllList";
-            this.dgvAllList.ReadOnly = true;
-            this.dgvAllList.RowHeadersVisible = false;
-            this.dgvAllList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
-            this.dgvAllList.RowTemplate.Height = 33;
-            this.dgvAllList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAllList.ShowCellErrors = false;
-            this.dgvAllList.ShowCellToolTips = false;
-            this.dgvAllList.ShowEditingIcon = false;
-            this.dgvAllList.ShowRowErrors = false;
-            this.dgvAllList.Size = new System.Drawing.Size(996, 575);
-            this.dgvAllList.TabIndex = 2;
-            this.dgvAllList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAllList_CellClick);
-            // 
             // dgvFavorite
             // 
             this.dgvFavorite.AllowUserToAddRows = false;
@@ -392,14 +203,182 @@
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "UpdateTime";
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.Format = "yyyy/MM/dd  HH:mm:ss";
-            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Format = "yyyy/MM/dd  HH:mm:ss";
+            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewTextBoxColumn8.FillWeight = 120F;
             this.dataGridViewTextBoxColumn8.HeaderText = "UpdateTime";
             this.dataGridViewTextBoxColumn8.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.dgvAllList);
+            this.tabPage2.Location = new System.Drawing.Point(8, 51);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1002, 581);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "All List";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dgvAllList
+            // 
+            this.dgvAllList.AllowUserToAddRows = false;
+            this.dgvAllList.AllowUserToDeleteRows = false;
+            this.dgvAllList.AllowUserToResizeColumns = false;
+            this.dgvAllList.AllowUserToResizeRows = false;
+            this.dgvAllList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvAllList.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvAllList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAllList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.dgvAllList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvAllList.Location = new System.Drawing.Point(3, 3);
+            this.dgvAllList.Name = "dgvAllList";
+            this.dgvAllList.ReadOnly = true;
+            this.dgvAllList.RowHeadersVisible = false;
+            this.dgvAllList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
+            this.dgvAllList.RowTemplate.Height = 33;
+            this.dgvAllList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvAllList.ShowCellErrors = false;
+            this.dgvAllList.ShowCellToolTips = false;
+            this.dgvAllList.ShowEditingIcon = false;
+            this.dgvAllList.ShowRowErrors = false;
+            this.dgvAllList.Size = new System.Drawing.Size(996, 575);
+            this.dgvAllList.TabIndex = 2;
+            this.dgvAllList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAllList_CellClick);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.dataGridViewTextBoxColumn1.FillWeight = 75F;
+            this.dataGridViewTextBoxColumn1.HeaderText = "No";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "CArea";
+            this.dataGridViewTextBoxColumn2.FillWeight = 85F;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Area";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Position";
+            this.dataGridViewTextBoxColumn3.FillWeight = 190F;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "UpdateTime";
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Format = "yyyy/MM/dd  HH:mm:ss";
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewTextBoxColumn4.FillWeight = 120F;
+            this.dataGridViewTextBoxColumn4.HeaderText = "UpdateTime";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(135, 37);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Address";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnRemoveFav);
+            this.groupBox2.Controls.Add(this.btnAddFav);
+            this.groupBox2.Controls.Add(this.tbEmpCnt);
+            this.groupBox2.Controls.Add(this.tbAvCnt);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.tbAddress);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(1036, 224);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(526, 575);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Detail";
+            // 
+            // btnRemoveFav
+            // 
+            this.btnRemoveFav.Location = new System.Drawing.Point(23, 484);
+            this.btnRemoveFav.Name = "btnRemoveFav";
+            this.btnRemoveFav.Size = new System.Drawing.Size(486, 63);
+            this.btnRemoveFav.TabIndex = 16;
+            this.btnRemoveFav.Text = "Remove Fav.";
+            this.btnRemoveFav.UseVisualStyleBackColor = true;
+            this.btnRemoveFav.Click += new System.EventHandler(this.btnRemoveFav_Click);
+            // 
+            // btnAddFav
+            // 
+            this.btnAddFav.Location = new System.Drawing.Point(23, 384);
+            this.btnAddFav.Name = "btnAddFav";
+            this.btnAddFav.Size = new System.Drawing.Size(486, 63);
+            this.btnAddFav.TabIndex = 15;
+            this.btnAddFav.Text = "Add Fav.";
+            this.btnAddFav.UseVisualStyleBackColor = true;
+            this.btnAddFav.Click += new System.EventHandler(this.btnAddFav_Click);
+            // 
+            // tbEmpCnt
+            // 
+            this.tbEmpCnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEmpCnt.Location = new System.Drawing.Point(316, 285);
+            this.tbEmpCnt.Name = "tbEmpCnt";
+            this.tbEmpCnt.Size = new System.Drawing.Size(139, 49);
+            this.tbEmpCnt.TabIndex = 13;
+            // 
+            // tbAvCnt
+            // 
+            this.tbAvCnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAvCnt.Location = new System.Drawing.Point(66, 285);
+            this.tbAvCnt.Name = "tbAvCnt";
+            this.tbAvCnt.Size = new System.Drawing.Size(139, 49);
+            this.tbAvCnt.TabIndex = 12;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(319, 220);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(133, 37);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "EmpCnt";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(59, 220);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 37);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Available";
+            // 
+            // tbAddress
+            // 
+            this.tbAddress.Location = new System.Drawing.Point(23, 123);
+            this.tbAddress.Name = "tbAddress";
+            this.tbAddress.Size = new System.Drawing.Size(486, 44);
+            this.tbAddress.TabIndex = 8;
             // 
             // Form1
             // 
@@ -412,18 +391,18 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "iUbike";
             this.Shown += new System.EventHandler(this.Form1_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFavorite)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAllList)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAllList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFavorite)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -439,12 +418,10 @@
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbAddress;
         private System.Windows.Forms.TextBox tbAvCnt;
-        private System.Windows.Forms.TextBox tbBkCnt;
         private System.Windows.Forms.TextBox tbEmpCnt;
         private System.Windows.Forms.Button btnRemoveFav;
         private System.Windows.Forms.Button btnAddFav;

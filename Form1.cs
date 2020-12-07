@@ -56,11 +56,13 @@ namespace HKU_UBikeStation
 
         protected void GetAreaItemAddToComboBox()
         {
-            var list = stationList.Select(dr => dr.CArea).Distinct();
-            foreach (object obj in list)
-            {
-                cbArea.Items.Add(obj);
-            }
+            stationList.Select(dr => dr.CArea).Distinct().ToList().ForEach(dr => cbArea.Items.Add(dr));
+
+            //var list = stationList.Select(dr => dr.CArea).Distinct();
+            //foreach (object obj in list)
+            //{
+            //    cbArea.Items.Add(obj);
+            //}
         }
 
         private void cbArea_SelectedIndexChanged(object sender, EventArgs e)
@@ -78,7 +80,6 @@ namespace HKU_UBikeStation
             tbAddress.Text = detail[0].CAddress;
             tbAvCnt.Text = detail[0].AvailableCNT.ToString();
             tbEmpCnt.Text = detail[0].EmpCNT.ToString();
-            tbBkCnt.Text = (detail[0].AvailableCNT - detail[0].EmpCNT).ToString();
 
             SelectedID = detail[0].ID;
         }
@@ -92,7 +93,6 @@ namespace HKU_UBikeStation
             tbAddress.Text = detail[0].CAddress;
             tbAvCnt.Text = detail[0].AvailableCNT.ToString();
             tbEmpCnt.Text = detail[0].EmpCNT.ToString();
-            tbBkCnt.Text = (detail[0].AvailableCNT - detail[0].EmpCNT).ToString();
 
             SelectedIdx = e.RowIndex;
         }
@@ -125,7 +125,6 @@ namespace HKU_UBikeStation
             tbAddress.Text = string.Empty;
             tbAvCnt.Text = string.Empty;
             tbEmpCnt.Text = string.Empty;
-            tbBkCnt.Text = string.Empty;
         }
 
         private void btnAddFav_Click(object sender, EventArgs e)
@@ -161,7 +160,6 @@ namespace HKU_UBikeStation
             tbAddress.Text = string.Empty;
             tbAvCnt.Text = string.Empty;
             tbEmpCnt.Text = string.Empty;
-            tbBkCnt.Text = string.Empty;
         }
     }
 }
