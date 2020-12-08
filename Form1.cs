@@ -7,9 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ConnectInternet;
 using System.Net;
-using Newtonsoft.Json;
 using System.CodeDom;
 using System.Runtime.CompilerServices;
 
