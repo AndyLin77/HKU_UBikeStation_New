@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cbArea = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -89,7 +89,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::HKU_UBikeStation.Properties.Resources.Logo;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(672, 149);
@@ -203,9 +202,9 @@
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "UpdateTime";
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.Format = "yyyy/MM/dd  HH:mm:ss";
-            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Format = "yyyy/MM/dd  HH:mm:ss";
+            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewTextBoxColumn8.FillWeight = 120F;
             this.dataGridViewTextBoxColumn8.HeaderText = "UpdateTime";
             this.dataGridViewTextBoxColumn8.MinimumWidth = 10;
@@ -283,9 +282,9 @@
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "UpdateTime";
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.Format = "yyyy/MM/dd  HH:mm:ss";
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Format = "yyyy/MM/dd  HH:mm:ss";
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewTextBoxColumn4.FillWeight = 120F;
             this.dataGridViewTextBoxColumn4.HeaderText = "UpdateTime";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 10;
